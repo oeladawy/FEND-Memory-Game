@@ -11,7 +11,7 @@ let matchCards = [];
 
 
 //invoke shuffle method to shuffle icons
-//shuffle(icons);
+shuffle(icons);
 
 
 //create cards
