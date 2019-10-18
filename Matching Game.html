@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+        	<span class="moves">0</span> Moves
+
+            <div class="restart">
+        		<i class="fa fa-repeat"></i>
+        	</div>
+
+          <div class="timer-container">
+            <i class="fa fa-clock"></i>
+            <span id="hours">00</span> :
+            <span id="minutes">00</span> :
+            <span id="seconds">00</span>
+          </div>
+
+          <div class="modal">
+            <div class="inner_class">
+                <h2>Congratulations !</h2>
+                <p>You Win !</p>
+                <p>In <span id="totalHours"></span> Hours, <span id="totalMinutes"></span> Minutes and <span id="totalSeconds"></span> Seconds</p>
+                <p>you took :
+                    <span id="total_moves"></span> moves to complete it!<br>
+                    Your rating is : <span id="total_rate"></span>
+                </p>
+                <p>
+                    Well done!!
+                </p>
+                <button class="play-again">Play Again</button>
+            </div>
+        </div>
+        </section>
+
+        <ul class="deck">
+
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
